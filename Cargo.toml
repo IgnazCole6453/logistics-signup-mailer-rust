@@ -1,0 +1,15 @@
+[package]
+name = "logistics-signup-mailer"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Email verification signup workflow for a logistics service"
+
+[lib]
+name = "logistics_signup_mailer"
+path = "src/lib.rs"
+
+[[bin]]
+name = "shipment-signup"
+path = "src/main.rs"
+

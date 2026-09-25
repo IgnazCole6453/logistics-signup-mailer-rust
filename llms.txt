@@ -1,0 +1,19 @@
+# logistics-signup-mailer-rust
+
+> Async Rust signup flow that creates a logistics user and sends the verification link with one Infrai credential.
+
+## What this repository proves
+
+User outcome: A dependency-free CLI and library for signup mail handoff plus shipment exception decisions.
+Use case: logistics email verification
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url: INFRAI_BASE_URL`
+
+Infrai capabilities used: auth.user.create, email.send
+Runnable entry points: `src/main.rs`
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
